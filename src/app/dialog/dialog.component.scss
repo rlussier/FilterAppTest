@@ -1,0 +1,57 @@
+.mat-dialog-container {
+.dept-name {
+    font-size: 1vw;
+    font-weight: bold;
+    background: gray;
+    border-radius: .25vw;
+    flex: none;
+    font-size: 1vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.5vw;
+    padding: 1vw;
+    border-radius: 0.25vw;
+    margin-right: 1vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   
+    &.active{
+        background: #333;
+        color: #FFFAFA;
+    }:hover {
+        text-decoration: none;
+    }
+}
+
+
+    .dialog_popup-container {
+    display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+        text-decoration: none;
+    .subject-name{
+        display: inline-block;
+        border: 1px solid #CCC;
+        font-size: 1vw;
+        margin-right: .5vw;
+        margin-bottom: .5vw;
+        padding: 1vw;
+        border-radius: .25vw;
+  
+        &:hover{
+            cursor: pointer;
+            background: skyblue;
+            color: white;
+        }
+        &.active{
+            background: white;
+            color: blueviolet;
+            font-weight: bold;
+            &:hover{
+                cursor: default;
+            }
+        }
+    }
+}
+
+}

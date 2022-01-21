@@ -1,0 +1,89 @@
+.department_container-wrapper {
+    background-color: #87ceeb;
+    box-shadow: 2px 2px black;
+    padding: 1rem;
+}
+
+.department-list{
+    display: flex;
+    flex-direction: column;
+
+    .department{
+        display: flex;
+        flex-shrink: 0;
+
+        + .department{
+            // margin-top: 1vw;
+            padding-top: 1vw;
+            // border-top: 1px dashed #333;
+        }
+
+    }
+}
+
+.dept-name {
+    font-size: 1vw;
+    font-weight: bold;
+    background: gray;
+    border-radius: .25vw;
+    flex: none;
+    font-size: 1vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1.2vw;
+    padding: 1vw;
+    border-radius: 0.25vw;
+    margin-right: 1vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   line-height: 1;
+
+    &.active{
+        background: #333;
+        color: #FFFAFA;
+        vertical-align: baseline;
+    }:hover {
+        text-decoration: none;
+    }
+}
+
+.subjects-wrapper{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    .subject-name{
+        border: 1px solid #CCC;
+        font-size: 1vw;
+        margin-right: .5vw;
+        margin-bottom: 1.2vw;
+        padding: 1vw;
+        border-radius: .25vw;
+        &:hover{
+            cursor: pointer;
+            background: skyblue;
+            color: white;
+        }
+        &.active{
+            background: white;
+            color: blueviolet;
+            font-weight: bold;
+            &:hover{
+                cursor: default;
+            }
+        }
+    }
+    .more-less{
+        border: 1px solid transparent;
+        font-size: 1vw;
+        padding: 1vw;
+        font-weight: bold;
+    }
+}
+
+.btn_subjects {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 1vw;
+    padding: 2vw 2vh;
+}
